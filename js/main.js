@@ -156,7 +156,7 @@ function initializeFormValidation() {
                 }
             } catch (error) {
                 // Option 2: Fallback to mailto link
-                const mailtoLink = \`mailto:your.email@example.com?subject=Portfolio Contact from \${encodeURIComponent(formData.name)}&body=\${encodeURIComponent(\`Name: \${formData.name}\\nEmail: \${formData.email}\\n\\nMessage:\\n\${formData.message}\`)}\`;
+                const mailtoLink = `mailto:your.email@example.com?subject=Portfolio Contact from \${encodeURIComponent(formData.name)}&body=\${encodeURIComponent(\`Name: \${formData.name}\\nEmail: \${formData.email}\\n\\nMessage:\\n\${formData.message}\`)}`;
                 
                 window.location.href = mailtoLink;
             }
