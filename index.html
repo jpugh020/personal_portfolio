@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing my web development projects, skills, and experience">
+    <meta name="keywords" content="web developer, portfolio, projects, frontend developer">
+    <title>Your Name - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section with Navigation -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="#about-me" aria-label="About Me Section">About Me</a></li>
+                <li><a href="#projects" aria-label="Projects Section">Projects</a></li>
+                <li><a href="#skills" aria-label="Skills Section">Skills</a></li>
+                <li><a href="#contact" aria-label="Contact Section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <!-- About Me Section -->
+        <section id="about-me" aria-labelledby="about-heading">
+            <h1 id="about-heading">About Me</h1>
+            <div class="about-content">
+                <img src="assets/professional_picture.png" alt="Professional headshot of [Your Name]" class="profile-image">
+                <p>Welcome! I'm a passionate web developer with expertise in creating responsive and accessible web applications.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">My Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <figure>
+                        <img src="assets/motivational-homepage-screenshot.png" alt="Screenshot of Project 1" loading="lazy">
+                        <figcaption>Project 1 Title</figcaption>
+                    </figure>
+                    <h3>Inspirational Homepage</h3>
+                    <p>An inspirational homepage made using TypeScript React, Redux, and OpenSource APIs for weather, images, and quotes.</p>
+                    <div class="project-links">
+                        <a href="https://cool-centaur-c064ba.netlify.app/" class="btn" aria-label="View Project 1 Demo">Demo</a>
+                        <a href="https://www.github.com/jpugh020/inspirational-homepage" target="_blank" class="btn" aria-label="View Project 1 Code">Code</a>
+                    </div>
+                </article>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <div class="skills-container">
+                <ul aria-label="Technical skills">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design</li>
+                    <li>Web Accessibility</li>
+                    <li>Version Control (Git)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" aria-label="Contact form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <!-- Fallback email link -->
+            <p class="contact-fallback">
+                If the form doesn't work, you can email me directly at 
+                <a href="mailto:your.email@example.com" class="email-link">your.email@example.com</a>
+            </p>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; <span id="current-year">2025</span> Jake Pugh. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
